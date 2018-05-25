@@ -1,12 +1,12 @@
-#Webhooks
+# Webhooks
 
 Webhooks are custom HTTP callbacks caused by some events in the system.
 When an event occurs in the system, the source site makes a request to the specified URL.
 
-##Webhooks settings
+## Webhooks settings
 
 	On the portal veriscanonline.com you can set up webhooks on the page
-''Settings -> Integration Services -> Webhooks''
+_Settings -> Integration Services -> Webhooks_
 or
 https://veriscanonline.com/Settings/Webhooks
 
@@ -15,11 +15,11 @@ https://veriscanonline.com/Settings/Webhooks
 * Update History Record;
 * Sign Agreement
 	
-	Check the checkbox ''Active'' and select the necessary events in the panel
-''Settings''.
+	Check the checkbox _Active_ and select the necessary events in the panel
+_Settings_.
 	Next, you should create one or more endpoints (up to 5).
 	Specify the URL which the HTTP request will be executed to 
-and check the checkbox ''Active''.
+and check the checkbox _Active_.
 	Advice. Add a secret parameter to your URL that you are sure that the request came from VeriScan Online system.
 	
 	By default, veriscanonline sends a POST request in JSON format.	
@@ -101,22 +101,22 @@ For example.
 
 	For each endpoint, you can specify HTTP-header.	
 	
-	For example, you can specify ''Content-Type text/xml'' if your endpoint receives data in XML format.
-Or you can specify ''Authorization Basic bG9naW46cGFzc3dvcmQ='' (login:password in base64 format), if you use Base64-authorization.
+	For example, you can specify _Content-Type text/xml_ if your endpoint receives data in XML format.
+Or you can specify _Authorization Basic bG9naW46cGFzc3dvcmQ=_ (login:password in base64 format), if you use Base64-authorization.
 
 	If your endpoint uses the OAuth authentication protocol, then you can save and then use AccessToken and RefreshToken.
 	
 	After you have successfully configured the endpoint and set the necessary settings on our portal, try to scan the card or
 sign the agreement or update the card in accordance with the selected events.
 
-##Webhooks history
+## Webhooks history
 			
-	The history of the sent webhooks is displayed on the ''History'' tab.
+	The history of the sent webhooks is displayed on the _History_ tab.
 	
-	You can filter the history according to the ''Success/Fail'' criteria.
+	You can filter the history according to the _Success/Fail_ criteria.
 	A webhook is considered to be successful, which your service responded on with the HTTP status of 2XX.
 	
-	You can see the raw data sent along with the webhook. To do this, click on the ''Data/Response'' column.
+	You can see the raw data sent along with the webhook. To do this, click on the _Data/Response_ column.
 	The data your service returned is displayed in the same location.
 	
-	You can see the data of the card if you press the ''History Log'' button.
+	You can see the data of the card if you press the _History Log_ button.
