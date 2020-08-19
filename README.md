@@ -67,7 +67,10 @@ By default, veriscanonline sends a POST request in JSON format.
     "GroupName": null,
     "DeviceName": "DeviceName",
     "DeviceLogin": "DeviceLogin",
-    "CompletedSurvey": null
+    "CompletedSurvey": null,
+    "AttachmentLinks": ["link", "link"],
+    "ImageLink": "",
+    "SignatureLink": ""
   }
 }
 ```
@@ -96,6 +99,9 @@ For example.
   <Tags>%Tags%</Tags>
   <GroupName>%GroupName%</GroupName>
   <DeviceName>%DeviceName%</DeviceName>
+  <Attachments>%AttachmentLinks%</Attachments>
+  <ImageLink>%ImageLink%</ImageLink>  
+  <SignatureLink>%SignatureLink%</SignatureLink>
 </Card>
 ```
 
@@ -108,6 +114,9 @@ If your endpoint uses the OAuth authentication protocol, then you can save and t
 	
 After you have successfully configured the endpoint and set the necessary settings on our portal, try to scan the card or
 sign the agreement or update the card in accordance with the selected events.
+
+### Content
+There's a webhook data contains the fields ```Attachments```, ```ImageLink``` and ```SignatureLink``` which contain link of blob content. All links are active within at 24 hours after create the webhook.
 
 ## Webhooks history
 			
