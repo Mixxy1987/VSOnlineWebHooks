@@ -70,7 +70,8 @@ By default, veriscanonline sends a POST request in JSON format.
     "CompletedSurvey": null,
     "AttachmentLinks": ["link", "link"],
     "ImageLink": "",
-    "SignatureLink": ""
+    "SignatureLink": "",
+    "DocumentIsValid": true
   }
 }
 ```
